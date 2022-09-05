@@ -1,0 +1,29 @@
+- create struct/mappings for these functions to use
+- create the $melk token, erc20 standard
+
+stake(){
+
+	- transfer in token
+	- ++ to user's staking balance
+	- check if they are a new staker, then add to mappings
+
+}
+
+unstake() {
+
+	- transfer token out, check if caller is the staking owner
+	- reconcile users staking balance/wipe it out
+
+}
+
+updateBalance/stakingRewards() {
+
+	- main goal of this function is to update the users staking balance as soon as they sign in using metamask/authenticated
+
+}
+
+claimStakingRewards() {
+
+	- main goal of this function is to allow user to claim their rewards, maybe above a threshold
+
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en" style="margin:0;">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Melking Moo</title>
+    <link rel="stylesheet" href="./main.css">
+
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script> -->
+    <script src="./index.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <section class="hero">
+
+        <div class="jumbo-container">
+
+
+            <!-- This is the cointainer that holds the rescue page -->
+            <div id="rescue-container-id">
+
+                <!-- This is the cointainer that holds the nav -->
+                <div class="rescue-nav-fullwidth-container">
+
+                    <!-- This is another  cointainer that holds the nav -->
+                    <div class="rescue-nav">
+
+                        <div class="r-nav-rescue">
+                            <a href="#" id="r-nav-rescue-btn">Rescue</a>
+                        </div>
+
+                        <div class="r-nav-barn">
+                            <a href="#" onclick="changeDiv('rescue-container-id','barn-container-id')"
+                                id="r-nav-barn-btn">Barn</a>
+                        </div>
+
+                        <div class="r-nav-melking">
+                            <a href="#" onclick="changeDiv('rescue-container-id','melking-container-id')"
+                                id="r-nav-melking-btn">Melking
+                                Parlour</a>
+                        </div>
+
+                        <div class="r-nav-collect">
+                            <a href="#" onclick="changeDiv('rescue-container-id','collect-container-id')"
+                                id="r-nav-collect-btn">Collect
+                                Melk</a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div id="images-id-div-div">
+                    <div id="images-id-div">
+
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+                        <img class="images-id" src="72.png" width="24%" height="auto">
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!-- This is the cointainer that holds the barn page -->
+            <div id="barn-container-id">
+
+                <!-- This is the cointainer that holds the nav -->
+                <div class="barn-nav-fullwidth-container">
+
+                    <!-- This is another  cointainer that holds the nav -->
+                    <div class="barn-nav">
+
+                        <div class="b-nav-rescue">
+                            <a href="#" onclick="changeDiv('barn-container-id','rescue-container-id')"
+                                id="b-nav-rescue-btn">Rescue</a>
+                        </div>
+
+                        <div class="b-nav-barn">
+                            <a href="#" id="b-nav-barn-btn">Barn</a>
+                        </div>
+
+                        <div class="b-nav-melking">
+                            <a href="#" onclick="changeDiv('barn-container-id','melking-container-id')"
+                                id="b-nav-melking-btn">Melking
+                                Parlour</a>
+                        </div>
+
+                        <div class="b-nav-collect">
+                            <a href="#" onclick="changeDiv('barn-container-id','collect-container-id')"
+                                id="b-nav-collect-btn">Collect
+                                Melk</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- This is the cointainer that holds the melking page -->
+            <div id="melking-container-id">
+
+                <!-- This is the cointainer that holds the nav -->
+                <div class="melking-nav-fullwidth-container">
+
+                    <!-- This is another  cointainer that holds the nav -->
+                    <div class="melking-nav">
+
+                        <div class="m-nav-rescue">
+                            <a href="#" onclick="changeDiv('melking-container-id','rescue-container-id')"
+                                id="m-nav-rescue-btn">Rescue</a>
+                        </div>
+
+                        <div class="m-nav-barn">
+                            <a href="#" onclick="changeDiv('melking-container-id','barn-container-id')"
+                                id="m-nav-barn-btn">Barn</a>
+                        </div>
+
+                        <div class="m-nav-melking">
+                            <a href="#" id="m-nav-melking-btn">Melking Parlour</a>
+                        </div>
+
+                        <div class="m-nav-collect">
+                            <a href="#" onclick="changeDiv('melking-container-id','collect-container-id')"
+                                id="m-nav-collect-btn">Collect
+                                Melk</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- This is the cointainer that holds the melking page -->
+            <div id="collect-container-id">
+
+                <!-- This is the cointainer that holds the nav -->
+                <div class="collect-nav-fullwidth-container">
+
+                    <!-- This is another  cointainer that holds the nav -->
+                    <div class="collect-nav">
+
+                        <div class="c-nav">
+                            <a href="#" onclick="changeDiv('collect-container-id','rescue-container-id')"
+                                id="c-nav-rescue-btn">Rescue</a>
+                        </div>
+
+                        <div class="c-nav">
+                            <a href="#" onclick="changeDiv('collect-container-id','barn-container-id')"
+                                id="c-nav-barn-btn">Barn</a>
+                        </div>
+
+                        <div class="c-nav">
+                            <a href="#" onclick="changeDiv('collect-container-id','melking-container-id')"
+                                id="c-nav-melking-btn">Melking
+                                Parlour</a>
+                        </div>
+
+                        <div class="c-nav-collect">
+                            <a href="#" id="c-nav-collect-btn">Collect Melk</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+
+</body>
+
+
+
+</html>

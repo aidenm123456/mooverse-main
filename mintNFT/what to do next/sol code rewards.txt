@@ -1,0 +1,73 @@
+farmhouse.finance
+
+user's mappings
+
+- userAddress
+- stakingBalance
+- lastUpdate
+- nowUpdate 
+- tokenIdArray
+
+
+
+
+uint256 decayDate; // create mapping, global var to work backwards
+
+
+
+function rewards(userAddress) {
+
+	//are we in decay?
+	if (block.timeStamp - decayDate) < 182 days && (lastUpdated - decayDate) < 182;
+
+		
+		if (block.timeStamp - lastUpdate) > 1 days;
+			nowUpdate = block.timestamp
+
+			for i=(lastUpdated-decayDate)/1 days, i < (nowUpdate-decayDate)/1 days, i++;
+				rewards += ((1*0.98)^i) * stakingBalance
+
+			lastUpdate = nowUpdate
+			//nowUpdate = null
+
+
+	//are we passed decay, but sill have to pay out static rewards?
+	elseif (block.timeStamp - decayDate) > 182 days && (lastUpdated - decayDate) < 182;
+
+		//yes, check if we need to update the balance
+		if (block.timeStamp - lastUpdate) > 1 days;
+			nowUpdate = block.timestamp
+
+			// calculate decaying rewards
+			for i=(lastUpdated-decayDate)/1 days, i < 182, i++;
+				rewards += ((1*0.98)^i) * stakingBalance
+					
+			for i=182, i < (block.timeStamp - decayDate), i++;
+				rewards += 3.9921780341818 * stakingBalance
+
+			lastUpdate = nowUpdate
+
+	// we are completly passed the decay period
+	elseif (block.timeStamp - decayDate) > 182 days && (lastUpdated - decayDate) > 182;
+
+		//yes, check if we need to update the balance
+		if (block.timeStamp - lastUpdate) > 1 days;
+			nowUpdate = block.timestamp
+
+			for i=(lastUpdated-decayDate), i < (block.timeStamp - decayDate), i++;
+				rewards += 3.9921780341818 * stakingBalance
+
+			lastUpdate = nowUpdate
+
+				
+			
+		
+	
+		
+		
+
+
+	else;
+		return rewards
+		
+}

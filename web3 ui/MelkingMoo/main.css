@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap');
+
+body {
+    /* background-color: lightgrey ; */
+    margin:0;
+    font-family: 'Port Lligat Sans', sans-serif;
+     
+}
+
+.hero {
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('night.jpg');
+    overflow: hidden;
+    background-size: auto 100vh;
+}
+
+/* jumbo container holding all four containers (rescue, barn, melking parlour, collect melk) */
+.jumbo-container{
+    padding-top: 12em;
+    padding-left: 3em;
+    width: 65%;
+    height: 75%;
+}
+
+/* hide scroll bad within the  */
+#rescue-container-id::-webkit-scrollbar{
+    display: none;
+}
+
+/* resuce css */
+#rescue-container-id{
+    overflow: hidden;
+    overflow-y: scroll;
+    display: block;
+    margin:0;
+    background: rgba(82, 84, 101, 0.85);
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    /* padding-top: 10em; */
+}
+
+
+.rescue-nav-fullwidth-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.rescue-nav{
+    
+    padding-top: 0.75em;
+    width: 85%;
+    font-size:  25px;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+/* css for rescue buttons */
+
+#r-nav-rescue-btn{
+    font-weight: 700;
+    color: #E27A5A;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+#r-nav-barn-btn{
+    font-weight: 700;
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+#r-nav-melking-btn{
+    font-weight: 700;
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+#r-nav-collect-btn{
+    font-weight: 700;
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+
+/* .rescue-h3{
+    font-weight: 700;
+    margin:0;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.25em;
+
+}
+
+#rescue-h4{
+    font-weight: 700;
+    margin:0;
+    color: #E27A5A;
+    text-decoration: none;
+    font-size: 1.25em;
+
+} */
+
+
+
+/* barn css */
+#barn-container-id{
+    display: none;
+    margin:0;
+    background: rgba(82, 84, 101, 0.85);
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    /* padding-top: 10em; */
+}
+
+
+.barn-nav-fullwidth-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.barn-nav{
+    
+    padding-top: 0.75em;
+    width: 85%;
+    font-size:  25px;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+
+/* css for barn buttons */
+
+#b-nav-rescue-btn{
+    font-weight: 700;
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+#b-nav-barn-btn{
+    font-weight: 700;
+    color: #E27A5A;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+#b-nav-melking-btn{
+    font-weight: 700;
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+#b-nav-collect-btn{
+    font-weight: 700;
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+
+
+/* .barn-h3{
+    font-weight: 700;
+    margin:0;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.25em;
+
+}
+
+#barn-h4{
+    font-weight: 700;
+    margin:0;
+    color: #E27A5A;
+    text-decoration: none;
+    font-size: 1.25em;
+
+} */
+
+
+/* melking css */
+#melking-container-id{
+    display: none;
+    margin:0;
+    background: rgba(82, 84, 101, 0.85);
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    
+}
+
+
+.melking-nav-fullwidth-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.melking-nav{
+    
+    padding-top: 0.75em;
+    width: 85%;
+    font-size:  25px;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+/* css for melking buttons */
+
+#m-nav-rescue-btn{
+    font-weight: 700;
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+#m-nav-barn-btn{
+    font-weight: 700;
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+#m-nav-melking-btn{
+    font-weight: 700;
+    color: #E27A5A;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+#m-nav-collect-btn{
+    font-weight: 700;
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+
+/* collect css */
+#collect-container-id{
+    display: none;
+    margin:0;
+    background: rgba(82, 84, 101, 0.85);
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    
+}
+
+
+.collect-nav-fullwidth-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.collect-nav{
+    
+    padding-top: 0.75em;
+    width: 85%;
+    font-size:  25px;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+
+/* .collect-h3{
+    font-weight: 700;
+    margin:0;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.25em;
+
+}
+
+#collect-h4{
+    font-weight: 700;
+    margin:0;
+    color: #E27A5A;
+    text-decoration: none;
+    font-size: 1.25em;
+    
+
+} */
+
+/* css for collect buttons */
+
+#c-nav-rescue-btn{
+    font-weight: 700;
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+#c-nav-barn-btn{
+    font-weight: 700;
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+#c-nav-melking-btn{
+    font-weight: 700;
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+#c-nav-collect-btn{
+    font-weight: 700;
+    color: #E27A5A;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+
+/* moo css */
+
+
+#images-id-div{
+    max-width:90%;
+}
+
+#images-id-div-div{
+    display: flex;
+    justify-content: center;
+}
